@@ -108,8 +108,15 @@ public class Demo1 {
         nums[2] = 7;
         nums[3] = 2;
 
-        for (int i = 0; i < 4; i++) {
-            System.out.println(nums[i]);
+        // for (int i = 0; i < 4; i++) {
+        // System.out.println(nums[i]); //ans: 9 4 7 2
+        // }
+
+        // using enhanced loop- intead of writing above for loop, we can tell the
+        // program to give us whatever values in the arrays are
+
+        for (int n : nums) {
+            System.out.println(n); // ans: 9 4 7 2
         }
 
     }
