@@ -34,6 +34,11 @@
 // }
 
 // }
+// ...
+// ...
+// ...
+// ...
+// ...
 
 // //25. Method Overloading
 
@@ -75,16 +80,43 @@
 
 // }
 // }
+// ...
+// ...
+// ...
+// ...
+// ...
 
-//Creation of Array
+// //Creation of Array
 
+// public class Demo1 {
+// public static void main(String a[]) {
+
+// int nums[] = { 6, 5, 0, 2 }; // the [] says nums is an array
+// System.out.println(nums[0]); // printing value at 0th position. ans: 6
+
+// nums[1] = 4; // overwriting value at present at the 1st position
+// System.out.println(nums[1]); // ans: 4
+// }
+// }
+
+//what if you don't know values but know the lenth of an array
 public class Demo1 {
     public static void main(String a[]) {
+        int nums[] = new int[4]; // length of the array is four. Bydefault the values in the array are set to 0
+        nums[0] = 9; // setting the values
+        nums[1] = 4;
+        nums[2] = 7;
+        nums[3] = 2;
 
-        int nums[] = { 6, 5, 0, 2 }; // the [] says nums is an array
-        System.out.println(nums[0]); // printing value at 0th position. ans: 6
+        for (int i = 0; i < 4; i++) {
+            System.out.println(nums[i]);
+        }
 
-        nums[1] = 4; // overwriting value at present at the 1st position
-        System.out.println(nums[1]); // ans: 4
     }
 }
+
+// ...
+// ...
+// ...
+// ...
+// ...
