@@ -100,30 +100,76 @@
 // }
 
 //what if you don't know values but know the lenth of an array
+// public class Demo1 {
+//     public static void main(String a[]) {
+//         int nums[] = new int[4]; // length of the array is four. Bydefault the values in the array are set to 0
+//         nums[0] = 9; // setting the values
+//         nums[1] = 4;
+//         nums[2] = 7;
+//         nums[3] = 2;
+
+//         // for (int i = 0; i < 4; i++) {
+//         // System.out.println(nums[i]); //ans: 9 4 7 2
+//         // }
+
+//         // using enhanced loop- intead of writing above for loop, we can tell the
+//         // program to give us whatever values in the arrays are
+
+//         for (int n : nums) {
+//             System.out.println(n); // ans: 9 4 7 2
+//         }
+
+//     }
+// }
+
+// ...
+// ...
+// ...
+// ...
+// ...
+
+// //What is String?
+
+// public class Demo1 {
+//     public static void main(String a[]) {
+//         String name = "Sejal"; // this is how we generate a String
+//         System.out.println("hello " + name); // ans: hello Sejal
+
+//         System.out.println(name.charAt(1)); // ans: e (Character at 1st index)
+//     }
+// }
+
+// ...
+// ...
+// ...
+// ...
+// ...
+
+//Mutable vs Immutable String , StringBuffer and StringBuilder
+//All strings are mutable. Mutable means if you set a value to a String you can change that value.
+//To make String Immutable (it's value cannot be changed), we use 1)String Buffer and 2)String Builder
+
+//1) String Buffer
+
 public class Demo1 {
     public static void main(String a[]) {
-        int nums[] = new int[4]; // length of the array is four. Bydefault the values in the array are set to 0
-        nums[0] = 9; // setting the values
-        nums[1] = 4;
-        nums[2] = 7;
-        nums[3] = 2;
+        // StringBuffer sb = new StringBuffer();
+        // System.out.println(sb.capacity()); // ans: 16 (By default String has
+        // capacity)
+        // of 16)
 
-        // for (int i = 0; i < 4; i++) {
-        // System.out.println(nums[i]); //ans: 9 4 7 2
-        // }
+        StringBuffer sb = new StringBuffer("Sejal");
+        // System.out.println(sb.length()); // ans:5
+        // System.out.println(sb.capacity()); // ans: 21 (using String buffer the String
+        // becomes immutable and for buffer
+        // // String buffer gives us extra 16 spaces. hence the capacity of this string
+        // // becomes 5(Sejal) + 16 = 21)
 
-        // using enhanced loop- intead of writing above for loop, we can tell the
-        // program to give us whatever values in the arrays are
+        sb.append(" Satav"); // ans: Sejal Satav
 
-        for (int n : nums) {
-            System.out.println(n); // ans: 9 4 7 2
-        }
+        sb.deleteCharAt(1); // ans: Sjal Satav
+
+        System.out.println(sb);
 
     }
 }
-
-// ...
-// ...
-// ...
-// ...
-// ...
